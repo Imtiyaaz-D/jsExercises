@@ -46,3 +46,11 @@ function display(fullName){
 }
 
 display(fullName)
+
+// Question 2
+let firstName = 'Imtiyaaz'
+let lastName = 'Damon'
+let age = '20'
+let subjects = ['Math','English','Afrikaans','Physics','Life orentation','Design']
+let address = ['Swart Street','14','Athlone','South Africa']
+console.log(firstName,lastName,age,subjects,address)
