@@ -8,18 +8,53 @@
     <title>jsExercise</title>
 </head>
 <body>
-<div class="container">
+<!-- <div class="container">
     <div class="row" id="Number1">
-        <label for="">Number1<input type="text"></label>
+        <label for="number1">Number1 <input type="text"></label>
     </div>
     <div class="row" id="operator">
-        <label for="">operator<input type="text"></label>
+        <label for="">operator: <input type="number"></label>
+        <select id = "opeerator" required>
+            <option value="+">Addition </option>
+            <option value="-">Subtraction </option>
+            <option value="/">Division </option>
+            <option value="*">Multiplication </option>
+        </select>
+
     </div>
     <div class="row" id="Number2">
-        <label for="">Number2<input type="text"></label>
+        <label for="number2">Number2 <input type="numbers"></label>
     </div>
+    <div class="row-input" id="input" >
+        <input for="numbers" readonly>
+    </div>
+
+    <div class="button-container-div" >
 <button onclick="display(result)">display</button>
 </div>
+</div> -->
+<div id="container">
+    <label for="number1">Number 1:</label>
+    <input type="number" id="number1" required>
+    
+    <label for="number2">Number 2:</label>
+    <input type="number" id="number2" required>
+    
+    <label for="operator">Operator:</label>
+    <select id="operator" required>
+      <option value="+">Addition (+)</option>
+      <option value="-">Subtraction (-)</option>
+      <option value="*">Multiplication (*)</option>
+      <option value="/">Division (/)</option>
+    </select>
+    
+    <div class="buttons">
+      <button type="button" onclick="calculate()">Display</button>
+      <button type="button" onclick="clearForm()">Clear</button>
+    </div>
+</div>
+  
+  <div class="result" id="result"></div>
     <script src="./script/code.js"></script>
 </body>
 </html>
