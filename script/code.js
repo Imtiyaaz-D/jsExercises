@@ -109,3 +109,17 @@ let subject = "programming"
 // console.log(mirror)
 
 console.log(subject.split('').reverse().join(''))
+
+//Question 5
+let person =[{
+    name:"Mish-al",
+    dob:"2020-05-31"
+}]
+let todayDate = new Date()
+let birthdayDate = new Date(person[0].dob)
+console.log(birthdayDate)
+console.log(todayDate)
+
+console.log(todayDate.getDate())
+console.log(birthdayDate.getDate())
+console.log(birthdayDate.getDate() - todayDate.getDate()  + " days left until his birthday")
