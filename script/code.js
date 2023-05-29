@@ -105,10 +105,8 @@ function clearForm() {
 }
 //Question 4
 let subject = "programming"
-// let mirror = [subject[11]+subject[10]+subject+[9]+subject[8]+subject[7]+subject[6]+subject[5]+subject[4]+subject[3]+subject[2]+subject[1]+subject[0]]
-// console.log(mirror)
-
 console.log(subject.split('').reverse().join(''))
+// console.dir(new String());
 
 //Question 5
 let person =[{
@@ -123,3 +121,39 @@ console.log(todayDate)
 console.log(todayDate.getDate())
 console.log(birthdayDate.getDate())
 console.log(birthdayDate.getDate() - todayDate.getDate()  + " days left until his birthday")
+
+//Question 6
+let results = "60%"
+switch(results){
+    case "100%":
+        results = ("100%")
+}
+// for (let i=0; i<10;i++){
+//     if((i % 2) > 0)
+//     continue
+//     console.log(i)
+// }
+//"for of" is for an array. 
+// "for in" is for an index.
+// console.table(variable)
+
+// for(let p in personDetails){
+//     console.log(`${p}` `${personDetail[p]}`);
+// }
+// console.log(personDetail.firstName)
+ let friends =['henk','peter','jack','lerato','julias']
+console.log(friends.slice(2, 4))
+let numbers =[2,5,7,7]
+console.log(numbers);
+// numbers.splice(0,2)
+// let noDuplicate = []
+// numbers.forEach((item)=>{
+//     if(!noDuplicate.includes(item))
+//     noDuplicate.push(item)
+// })
+// console.log(noDuplicate)
+console.log(new Set(numbers));
+console.log(numbers.indexOf(7));
+console.log(numbers.lastIndexOf(7));
+numbers.concat([28,27])
+console.log(numbers.concat([28,27]));
