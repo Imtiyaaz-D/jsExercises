@@ -103,3 +103,9 @@ function clearForm() {
     document.getElementById("operator").selectedIndex = 0;
     document.getElementById("result").textContent = "";
 }
+//Question 4
+let subject = "programming"
+// let mirror = [subject[11]+subject[10]+subject+[9]+subject[8]+subject[7]+subject[6]+subject[5]+subject[4]+subject[3]+subject[2]+subject[1]+subject[0]]
+// console.log(mirror)
+
+console.log(subject.split('').reverse().join(''))
